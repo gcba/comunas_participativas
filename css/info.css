@@ -1,0 +1,71 @@
+@font-face { font-family: 'Gotham Book';
+    src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");}
+@font-face { font-family: 'Gotham Bold';
+    src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");}
+@font-face { font-family: 'Gotham Medium';
+    src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+
+/* TODO: chequear tamaños de fuente para celus */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: 'Gotham Book', sans-serif;
+}
+
+#header {
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3em;
+    width: 100%;
+    z-index: 10;
+}
+#header img {
+    max-height: 100%;
+    margin-left: 2em;
+}
+#main {
+    margin-top: 3em;
+    position: relative;
+    color: #222;
+}
+
+#main #main-text {
+    border-right: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+}
+
+#main #main-text h1 {
+    font-family: 'Gotham Bold', sans-serif;
+    font-size: 2em;
+}
+
+#main #main-text h2 {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 1.5em;
+}
+
+#main #main-text .back {
+    margin: 1em 0;
+}
+#main #main-text .back a {
+    text-decoration: none;
+    color: #222;
+    font-family: 'Gotham Bold', sans-serif;
+}
+
+#main #main-text .border-bottom {
+    border-bottom: solid 1px #222;
+    margin-bottom: 1em;
+}
+
+a.external-anchor {
+    display: block;
+    position: relative;
+    top: -7em;
+    visibility: hidden;
+}

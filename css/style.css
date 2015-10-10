@@ -1,0 +1,144 @@
+@font-face { font-family: 'Gotham Book';
+    src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");}
+@font-face { font-family: 'Gotham Bold';
+    src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");}
+@font-face { font-family: 'Gotham Medium';
+    src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+
+/* TODO: chequear tamaños de fuente para celus */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Gotham Book', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#header {
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3em;
+    width: 100%;
+    z-index: 10;
+}
+#header img {
+    max-height: 100%;
+    margin-left: 2em;
+}
+#main {
+    padding-top: 3em;
+    position: relative;
+    min-height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#main #background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/background-editado.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+#main #main-text {
+    position: absolute;
+    height: 50%;
+    top: 25%;
+    font-size: 1em;
+}
+#main #main-text h1 {
+    font-family: 'Gotham Bold', sans-serif;
+}
+#main #main-text p {
+    margin-bottom: 3em;
+}
+#main #main-text a {
+    color: #fff;
+    font-family: 'Gotham Bold', sans-serif;
+    text-decoration: none !important;
+}
+#main #main-text #main-button {
+    font-weight: bold;
+    border: 2px solid #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #222;
+    background-color: #fff;
+    padding: 0;
+    overflow: hidden;
+}
+
+#bottom .logos img {
+    max-width: 30%;
+    max-height: 9em;
+}
+
+#bottom #bottom-text {
+    text-align: left;
+    font-size: 0.8em;
+    padding: 2em 1em;
+}
+
+#bottom #bottom-text a {
+    color: #222;
+    font-family: 'Gotham Bold', sans-serif;
+}
+
+#bottom #faq {
+    padding: 2em 0;
+}
+
+#bottom #faq a {
+    background-color: #333;
+    background-clip: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px;
+    border: solid 1px #333;
+    white-space: nowrap;
+    color: #eee;
+    font-family: 'Gotham Bold', sans-serif;
+}
+
+#bottom #faq #faq-button-container {
+    margin-bottom: 5px;
+}
+
+@media screen and (orientation: portrait) {
+    #main #main-text {
+        top: 10%;
+        font-size: 2.5em;
+    }
+    #main #main-text h1 {
+        font-size: 2em;
+    }
+}
