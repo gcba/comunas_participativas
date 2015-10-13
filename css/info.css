@@ -46,11 +46,11 @@ html, body {
 
 #main #main-text h2 {
     font-family: 'Gotham Medium', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 #main #main-text .back {
-    margin: 1em 0;
+    margin: 1em 0 3em 0;
 }
 #main #main-text .back a {
     text-decoration: none;
