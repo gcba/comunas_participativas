@@ -1,0 +1,162 @@
+/* Landing de bienvenida */
+main #landing{
+	position: relative;
+	padding-top: 3em; 
+	min-height: 150px; 
+	width: 100%; 
+	text-align: center; 
+	color: #FFF; 
+	overflow: hidden;
+}
+main #landing #background-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 150px;
+	height: 100%; 
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-image: url('../img/background-editado.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+main #landing #main-text {
+	position: relative;
+	max-width: 475px; 
+	margin: 15% auto; 
+	font-size: 1em;
+}
+main #landing #main-text h1 {
+	font-size: 36px; 
+	font-family: 'Gotham Bold', sans-serif;
+}
+main #landing #main-text p {
+	margin-bottom: 2em;
+	padding: 10px; 
+}
+main #landing #main-text a {
+	color: #fff;
+	font-family: 'Gotham Bold', sans-serif;
+	text-decoration: none !important;
+}
+main #landing #main-text button {
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* Pie */
+footer {
+	bottom: 0;
+	left: 0;
+	color: #222;
+	background-color: #fff;
+	overflow: hidden;
+	display: table;
+	margin: 0;
+	width: 100%;
+	padding: 10px 0px; 
+}
+footer section{
+	max-width: 35%; 
+	display: inline-block; 
+	vertical-align: middle;
+	margin: auto; 
+	text-align: center; 
+}
+	footer section#logos .logo{
+		display: inline-block;
+		height: 65px; 
+		margin: 10px; 
+		background-image: url('../img/logos.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+		footer section#logos .logo#FDER{
+			width: 100px; 
+			background-position: 0px 0px; 
+		}
+		footer section#logos .logo#comuna14{
+			width: 50px; 
+			background-position: -130px 0px; 
+		}
+		footer section#logos .logo#labGCBA{
+			width: 115px; 
+			background-position: -205px 0px; 
+		}	
+	footer section#summary{
+		text-align: left;
+		font-size: 0.8em;
+		padding: 2em 1em;
+		max-width: 40%; 
+	}
+		footer section#summary a{	
+			color: #222;
+			font-family: 'Gotham Bold', sans-serif;
+		}
+	footer section#faq {max-width: 33%;}
+	footer section#faq button {
+		background-color: #333;
+		background-clip: border-box;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		padding: 5px;
+		border: solid 1px #333;
+		color: #eee;
+		text-transform: uppercase; 
+		font-family: 'Gotham Bold', sans-serif;
+	}
+
+	/* Pie con responsive hasta los 639px de ancho */
+	@media (max-width: 639px) {	
+		footer section{
+			max-width: inherit !important; 
+			margin: 0 auto; 
+		}
+		footer section#summary{
+			max-width: 100%; 
+			margin: 0 auto; 
+		}
+			footer section#logos .logo{
+				height: 125px; 
+				display: block;
+				margin: 0 auto; 
+			}
+				footer section#logos .logo#FDER{
+					width: 200px; 
+					background-position: 0px 0px; 
+				}
+				footer section#logos .logo#comuna14{
+					width: 100px; 
+					background-position: -250px 0px; 
+				}
+				footer section#logos .logo#labGCBA{
+					width: 215px; 
+					background-position: -400px 0px; 
+				}	
+	}
+
+/*@media screen and (orientation: portrait) {
+	main #landing #main-text {
+		top: 10%;
+		font-size: 2em;
+	}
+	main #landing #main-text h1 {
+		font-size: 1.5em;
+	}
+}*/
