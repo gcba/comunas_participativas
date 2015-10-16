@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="pinterest" content="nohover">
-    <title>Comunas Participativas</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#1a1a1a" />
+	<meta name="pinterest" content="nohover">
+	<title>Comunas Participativas</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/home.css">
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:domain" content="http://buenosaires.gob.ar">
-    <meta name="twitter:site" content="@LABgcba">
-    <meta name="twitter:creator" content="@LABgcba">
-    <meta name="twitter:image:src" content="http://i.imgur.com/H2DmqS5.png">
-    <meta name="twitter:description" content="Comunas Participativas es una plataforma web donde podés proponer, votar y debatir ideas para mejorar el barrio de Palermo. Registrate y empezá a ser parte de la decisión.">
-    <meta name="twitter:title" content="Comunas Participativas">
-    <meta name="twitter:url" content="http://cdn2.buenosaires.gob.ar/dgiga/modernizacion/comunas_participativas/">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:domain" content="http://buenosaires.gob.ar">
+	<meta name="twitter:site" content="@LABgcba">
+	<meta name="twitter:creator" content="@LABgcba">
+	<meta name="twitter:image:src" content="http://i.imgur.com/H2DmqS5.png">
+	<meta name="twitter:description" content="Comunas Participativas es una plataforma web donde podés proponer, votar y debatir ideas para mejorar el barrio de Palermo. Registrate y empezá a ser parte de la decisión.">
+	<meta name="twitter:title" content="Comunas Participativas">
+	<meta name="twitter:url" content="http://cdn2.buenosaires.gob.ar/dgiga/modernizacion/comunas_participativas/">
 
-    <meta property="og:title" content="Comunas Participativas" />
-    <meta property="og:site_name" content="Comunas Participativas" />
-    <meta property="og:description" content="Comunas Participativas es una plataforma web donde podés proponer, votar y debatir ideas para mejorar el barrio de Palermo. Registrate y empezá a ser parte de la decisión." />
-    <meta property="og:image" content="http://i.imgur.com/H2DmqS5.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="900" />
-    <meta property="og:image:height" content="460" />
-    <meta property="og:url" content="http://cdn2.buenosaires.gob.ar/dgiga/modernizacion/comunas_participativas/">
+	<meta property="og:title" content="Comunas Participativas" />
+	<meta property="og:site_name" content="Comunas Participativas" />
+	<meta property="og:description" content="Comunas Participativas es una plataforma web donde podés proponer, votar y debatir ideas para mejorar el barrio de Palermo. Registrate y empezá a ser parte de la decisión." />
+	<meta property="og:image" content="http://i.imgur.com/H2DmqS5.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="900" />
+	<meta property="og:image:height" content="460" />
+	<meta property="og:url" content="http://cdn2.buenosaires.gob.ar/dgiga/modernizacion/comunas_participativas/">
 </head>
 <body>
-<div id="header">
-    <a href="#"><img src="./img/logogcba.png"></a>
-</div>
-<div id="main" class="container-fluid">
-    <div id="background-img"></div>
-    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" id="main-text">
-        <h1>Comunas Participativas</h1>
-        <p>Comunas Participativas es una plataforma web donde podés proponer, votar y debatir ideas para mejorar el barrio de Palermo. Registrate y empezá a ser parte de la decisión.</p>
-        <a target="_blank" href="https://comunas-democracyos.herokuapp.com/"><span id="main-button">REGISTRATE</span></a>
-    </div>
+	<header>
+		<div class="container">
+			<a href="#"><div id="brand"></div></a>
+		</div>
+	</header>
 
-    <div id="bottom" class="row">
-        <div class="logos hidden-xs col-sm-4">
-            <img src="./img/logos.png">
-        </div>
-        <div id="bottom-text" class="col-xs-6 col-sm-5">
-            <p>Comunas Participativas es un prototipo de la Comuna 14 de la Ciudad Autónoma de Buenos Aires diseñado en el #BAHackaton2015 en conjunto con el Laboratorio de Gobierno del Ministerio de Modernización y DemocraciaOS.</p>
-            <p>
-                <a href="./info.html#terminos">Términos y condiciones</a> -
-                <a href="./info.html#privacidad">Políticas de Privacidad</a>
-            </p>
-        </div>
-        <div id="faq" class="col-xs-6 col-sm-3">
-            <div id="faq-button-container">
-                <a href="./info.html"><span>PREGUNTAS FRECUENTES</span></a>
-            </div>
-            <div class="logos visible-xs col-xs-12">
-                <div>
-                    <img src="./img/logos.png">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+	<main>
+		<div id="landing">
+			<div id="background-img"></div>
+			<div id="main-text">
+				<h1>Comunas Participativas</h1>
+				<p>Comunas Participativas es una plataforma web donde podés proponer, votar y debatir ideas para mejorar el barrio de Palermo. Registrate y empezá a ser parte de la decisión.</p>
+				<a target="_blank" href="https://comunas-democracyos.herokuapp.com/"><button>Registrate</button></a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container"><center>
+			<section id="logos">
+				<div class="logo" id="FDER"></div><div class="logo" id="comuna14"></div><div class="logo" id="labGCBA"></div>
+			</section>
+			<section id="summary">
+				<p>Comunas Participativas es un prototipo de la Comuna 14 de la Ciudad Autónoma de Buenos Aires diseñado en el #BAHackaton2015 en conjunto con el Laboratorio de Gobierno del Ministerio de Modernización y DemocraciaOS.</p>
+				<p>
+					<a href="./info.html#terminos">Términos y condiciones</a> -
+					<a href="./info.html#privacidad">Políticas de Privacidad</a>
+				</p>
+			</section>
+			<section id="faq">
+				<a href="./info.html"><button>Preguntas frecuentes</button></a>
+			</section>
+		</center></div>
+	</footer>
 </body>
 </html>
